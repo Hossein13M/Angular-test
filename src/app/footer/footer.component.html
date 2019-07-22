@@ -1,2 +1,10 @@
 <p>footer works!</p>
 <p>this is the footer of the programm </p>
+<input type="text" [(ngModel)]="myName" placeholder="please enter your name">
+<input type="text" [(ngModel)]="myAge" placeholder="please enter your age">
+<span>{{ myName }} {{ myAge }}</span>
+<button class="btn-primary" [disabled]="!saveStatus" (click)="buttonFunctionality()">click me</button>
+<p>{{ message }}</p>
+
+<input type="text" (input)="showName($event)">
+<p>{{ name }}</p>
