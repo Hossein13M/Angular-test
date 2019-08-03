@@ -6,5 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  name: string;
+  // TODO: this is the string interpolation
+  dataBindingStringInterpolation = 'String Interpolation Hossein';
+  getStringInterpolationName() {
+    return 'a method';
+  }
 }
