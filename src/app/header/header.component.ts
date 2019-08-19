@@ -9,6 +9,8 @@ export class HeaderComponent {
   // TODO: this is the string interpolation
   dataBindingStringInterpolation = 'String Interpolation Hossein';
   getStringInterpolationName() {
-    return 'a method';
+    return 'this is a method';
   }
+  // this is property binding
+  allowToClick = true;
 }

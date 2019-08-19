@@ -5,5 +5,12 @@
         <span>{{getStringInterpolationName()}}</span>
     </p>
     <h2>2) Property Binding</h2>
-    <p></p>
+    <div class="white-text-property">        
+    <p>let's add a button to learn more about property binding</p>
+    <p>the bellow button have been disabled with property binding the property binding works with [ ]</p>
+    <p>as it is the name of the property and the property value(here it is a boolean) comes in " "</p>
+    </div>
+    <button class="btn btn-primary"
+    [disabled]="!allowToClick">Click on me</button>
+    <p>your status for clicking on the button is: <span>{{allowToClick}}</span></p>
 </div>
