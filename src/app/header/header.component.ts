@@ -12,5 +12,15 @@ export class HeaderComponent {
     return 'this is a method';
   }
   // this is property binding
-  allowToClick = true;
+  allowToClick = false;
+  constructor(){
+    setTimeout(() => {
+      this.allowToClick = true;
+    }, 2000);
+  }
+  // this is the event binding
+  haveBeenClicked = 'it have not been clicked yet!';
+  onClickEvent(){
+    this.haveBeenClicked = 'yes now you have clicked the button!';
+  }
 }

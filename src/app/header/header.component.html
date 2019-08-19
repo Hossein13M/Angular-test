@@ -11,6 +11,10 @@
     <p>as it is the name of the property and the property value(here it is a boolean) comes in " "</p>
     </div>
     <button class="btn btn-primary"
-    [disabled]="!allowToClick">Click on me</button>
+    [disabled]="!allowToClick"
+    (click)="onClickEvent()">Click on me</button>
     <p>your status for clicking on the button is: <span>{{allowToClick}}</span></p>
+    <h2>3) Event Binding</h2>
+    <p>{{haveBeenClicked}}</p>
+    <div class="white-text-property">the above is the event binding once you click you can see the diffrence</div>
 </div>
