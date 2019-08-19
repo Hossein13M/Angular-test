@@ -17,4 +17,15 @@
     <h2>3) Event Binding</h2>
     <p>{{haveBeenClicked}}</p>
     <div class="white-text-property">the above is the event binding once you click you can see the diffrence</div>
+    <h2>4) Passing data using Event Binding</h2>
+    <label>this is the fourth step</label>
+    <input 
+    type="text"
+    class="form-control container"
+    (input) = "onUpdateInputName($event)">
+    <p>you can see the text you typed bellow </p>
+    <p>See! <span>{{typedText}}</span></p>
+    <h2>5) two way data binding</h2>
+    <input type="text" class="form-control container" [(ngModel)]="twoWayBinding">
+    <p>{{twoWayBinding}}</p>
 </div>

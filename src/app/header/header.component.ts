@@ -23,4 +23,14 @@ export class HeaderComponent {
   onClickEvent(){
     this.haveBeenClicked = 'yes now you have clicked the button!';
   }
+  // this is the fourth step
+  typedText = '';
+  onUpdateInputName(event: any){
+    this.typedText = event.target.value;
+  }
+  // two way data binding
+  twoWayBinding: string = "";
+  // onUpdateInputTwoWayBinding(event: any){
+  //   this.twoWayBinding = event.target.value;
+  // }
 }
